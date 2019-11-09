@@ -1,0 +1,15 @@
+<hr><div class="card mx-auto" *ngFor="let post of posts" >
+     <div class="card-body">
+          <form class="form-inline">
+               <div class="form-group">
+                    <input id="comment" class="form-control my-1" placeholder="Comment Here.."
+                    type="text" name="comment" (change)="addComment($event,post.id)" autocomplete="off">
+               </div>
+               <button class="btn btn-success" type="button" >Comment</button>
+          </form>
+          <div class="alert alert-secondary my-1 mx-auto" *ngFor="let comment of post.comments"
+>{{comment}}</div>
+</div>
+     </div>
+
+

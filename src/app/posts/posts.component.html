@@ -1,0 +1,24 @@
+
+
+<div class="card col-sm-6 mx-auto"*ngFor="let post of posts">
+     <div class="card-body">
+          <h5 class="card-title text-center" >{{post.content}}</h5>
+          <hr>
+          <div style="display: flex; justify-content: space-between;">
+          <i class="fa fa-thumbs-up" style="font-size:24px;color:red"
+           (click)="liked(post.id)">
+           <span style="color:black;">&nbsp;{{post.likes}}</span></i>
+          <i class='fas fa-comment' style='font-size:24px;color:red'
+          (click)="onCommentClicked(post.id)" >
+               <span style="color:black">&nbsp;{{post.commentCount}}</span></i>
+               
+              
+          
+     </div>
+     <app-comments></app-comments>
+</div>
+</div>
+
+
+
+

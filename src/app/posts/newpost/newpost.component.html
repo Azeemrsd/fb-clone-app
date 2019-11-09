@@ -1,0 +1,10 @@
+<form method="get" action="" class="col-sm-6 mx-auto from-inline">
+         <div class="form-group">
+              <h4 for="new-post" class="text-center">Post Something</h4>
+              <textarea id="new-post" class="form-control" name="new-post" rows="2" value="" 
+              placeholder="Type here to post anything.." (change)="addPost($event)"></textarea>
+              <button class="btn btn-success my-1 mx-auto text-center" 
+              type="button" >Post</button>
+         </div>
+</form>
+<app-posts></app-posts>
